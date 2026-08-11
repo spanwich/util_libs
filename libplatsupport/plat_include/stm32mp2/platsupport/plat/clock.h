@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: BSD-2-Clause
  */
 
-#pragma oncew
+#pragma once
 
 enum clk_id {
     CLK_MASTER,
