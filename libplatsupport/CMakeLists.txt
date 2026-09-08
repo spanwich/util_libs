@@ -132,6 +132,11 @@ if(KernelPlatImx8mq OR KernelPlatformImx8mm-evk OR KernelPlatformImx8mp-evk)
     list(APPEND deps src/plat/imx8m/clock.c)
 endif()
 
+if(KernelPlatformSTM32MP25x)
+    list(APPEND deps src/plat/stm32mp25x/chardev.c)
+    list(APPEND deps src/plat/stm32mp25x/ltimer.c)
+endif()
+
 if(KernelPlatPC99)
     set_source_files_properties(
         src/plat/pc99/keyboard_vkey.c
